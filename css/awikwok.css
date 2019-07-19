@@ -2,7 +2,10 @@ html{
 	padding: 3% 15% 5% 15%;
 	background-color: black;
 	color: white;
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Arvo', serif;
+}
+h3{
+	color: green;
 }
 a{
 	text-decoration: none;
@@ -17,5 +20,27 @@ nav{
 	font-size: 130%;
 }
 nav a{
-	font-style: bold; 
+	font-style: bold;
+	padding: 1.5%;
+}
+p{
+	text-align: justify;
+}
+.border {
+	border: 1.5px solid white;
+	padding: 0 1% 0 1% ;
+}
+.low{
+	color: green;
+}
+.med{
+	color: yellow;
+}
+.risk{
+	color: red;
+}
+img{
+	width: 100%;
+	height: auto;
+	text-align: center;
 }

