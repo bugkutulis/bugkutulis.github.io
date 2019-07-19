@@ -1,0 +1,21 @@
+html{
+	padding: 3% 20% 5% 20%;
+	background-color: black;
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	color: green;
+	text-decoration: underline;
+}
+nav{
+	text-align: center;
+	font-size: 130%;
+}
+nav a{
+	font-style: bold; 
+}
